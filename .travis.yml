@@ -6,10 +6,10 @@ install:
   - npm install
 
 script:
+  - hexo clean
   - hexo g
 
 after_script:
-  - hexo g
   - cd ./public
   - git init
   - git config user.name "Xzzzzz"
