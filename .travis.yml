@@ -20,7 +20,7 @@ after_script:
 
 branches:
   only:
-    - blog-source
+    - master
 env:
  global:
    - GH_REF: github.com/195286381/195286381.github.io.git
