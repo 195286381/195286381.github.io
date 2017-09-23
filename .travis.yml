@@ -10,6 +10,7 @@ script:
   - hexo g
 
 after_script:
+  - mv CNAME ./public
   - cd ./public
   - git init
   - git config user.name "Xzzzzz"
