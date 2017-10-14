@@ -1,7 +1,7 @@
 ---
-title: CSS 盒模型
+title: 关于 CSS 盒模型整理
 date: 2017-10-14 12:11:25
-tags:
+tags: CSS
 ---
 ## CSS盒模型
 之前的工作一直都在学习新的东西,疏于整理知识点,现在把CSS盒模型系统的整理一下:
@@ -21,8 +21,28 @@ tags:
 ### 标准模型和IE模型的区别
 标准模型的 width/height 等于 content 的 width/height
 IE模型的 width/height 等于 content+padding+border 的 width/height
+
 ### CSS盒模型设置
-```css 
-    box-sizing: content-box; // 标准模型
+
+```CSS
+    box-sizing: content-box; // 标准模型 (浏览器默认的方法)
     box-sizing: border-box; // IE 模型
 ```
+
+### JS如何获取盒模型对应的宽和高
+
+ ```
+ dom.style.width/height // 取出内联样式的宽和高
+
+ dom.currentStyle.width/height // 获取当前的宽度和高度 (only IE)
+ window.getComputedStyle(dom).width/height // 取出计算后的宽和高 (兼容 Firefox Chrome)
+
+ dom.getBoundingClientRect().width/height  // 获取元素的四个角,计算能够得到.
+ ```
+
+### BFC (边距重叠解决方案)
+
+- BFC 的基本概念
+- BFC 的原理 
+    - 
+- 
