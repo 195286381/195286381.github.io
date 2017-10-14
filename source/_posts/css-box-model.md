@@ -43,6 +43,16 @@ IE模型的 width/height 等于 content+padding+border 的 width/height
 ### BFC (边距重叠解决方案)
 
 - BFC 的基本概念
-- BFC 的原理 
-    - 
-- 
+    + 块级格式化上下文
+- BFC 的原理 (渲染规则)
+    + BFC 这个元素的垂直方向的边距会发生重叠
+    + BFC 不会和浮动元素的 box 重叠 (清除浮动)
+    + BFC 在页面上是一个独立的容器
+    + 计算 BFC 高度的时候, 浮动元素也会参与计算
+- 如何创建 BFC 
+    + overflow 不为 visible
+    + float 不为 none
+    + position 不为 static/relative
+    + display 为 inline-tabel/tabel相关 
+- BFC 的使用场景
+(关于BFC 后续会写一篇介绍)
