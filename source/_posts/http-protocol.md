@@ -1,7 +1,7 @@
 ---
-title: http-protocal
+title: 前端知识梳理-HTTP协议类
 date: 2017-10-01 16:49:27
-tags: http协议 tcp/ip
+tags: http协议 tcp/ip协议
 ---
 
 
@@ -44,3 +44,33 @@ POST 和 GET 的区别
 - 对参数的数据类型, GET只接受 ASCII 字符, 而POST没有限制
 - GET 比 POST 更不安全, 因为参数直接暴露在URL上, 所以不能用来传递敏感信息
 - GET 参数通过 URL 传递, POST 放在 Request body 中
+
+### HTTP 状态码
+
+状态码类
+- 1xx: 指示信息 - 表示请求已经接收, 继续处理
+- 2xx: 成功- 表示请求已被成功接收
+- 3xx: 重定向 - 要完成请求必须进行更进一步的操作
+- 4xx: 客户端错误 - 请求有语法错误或请求无法实现
+- 5xx: 服务器错误 - 服务器未能实现合法的请求
+
+常见 HTTP 状态码:
+
+- 200 OK: 客户端请求成功
+- 206 Partial Content: 客户发送了一个带有 Range 头的 GET 请求, 服务器完成了它
+- 301 Moved Permanently: 所请求的页面已经转移至新的 URL
+- 302 Found: 所请求的页面已经临时
+- 304 Not Modifued: 客户端有缓存的文档并发出一个条件性请求, 服务器告诉客户端原来缓存的文档可以继续使用.
+- 400 Bad Request: 客户端请求有语法错误, 不能被服务器理解
+- 401 Unauthorized: 请求未经授权, 这个状态代码必须和 WWW-Authenticate 报头域一起使用
+- 403 Forbidden: 对被请求页面的访问被禁止
+- 404 Not Found: 请求资源不存在
+- 500 Internal Server Error: 服务器发生不可预期的错误原来缓冲的文档还可以继续使用
+
+### 持久连接
+
+HTTP 协议采用"请求-应答"模式, 当使用普通模式, 即非 Keep-Alive 模式时, 每个请求
+
+### 管线化
+
+在使用持久连接的情况下, 
