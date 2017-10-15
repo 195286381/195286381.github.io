@@ -6,7 +6,7 @@ tags: redux
 ---
 # why Redux ?
 
-## Introduction
+## What's Redux/ Why does it exisit?
 
 ### Redux is All About State Management
 每当我们学习一个新的工具时,我们要理解为什么我们需要 Redux ? 下面我们将要给出答案.
@@ -53,5 +53,41 @@ store 对象 包含了应用的所有全局状态, 全部被维护在一个对�
 - 当前选中的tab标签
 - 导航控制
 
-## summary
+### summary
 Redux 是一个用于前端状态管理的 Javascript 库, 他与 React 应用无关, 随着应用程序的复杂, 来自状态方便的 bug 越来越多, 使用 Redux 管理一个单一状态树, 使得状态更加 `predictability`, 这也是为什么开发者喜欢 Redux 的原因.
+
+## How Redux Improves Predictability?
+
+既然说到 Redux 提升状态的可预测性, 那么它是在那几个方面提升状态的可预测性呢?
+
+### Predictability
+Redux 提高应用的可预测性在如下几个方面.
+
+- 数据集中化到一个地方: `store`
+- 组件不能直接从 store 写数据
+- 数据在 store 的流向是单向的
+- 严格限制 store 的修改
+
+Unidirectional Data Flow Review
+
+回顾 React 的核心特性是 `单向数据流`
+
+![](https://ws3.sinaimg.cn/large/006tNc79ly1fkiy4v4deqj31kw0w0dp6.jpg)
+`Data flows down from parent component to child component. Data updates are sent to the parent component where the parent performs the actual change.`
+
+React 的单向数据流工作的很好, 但是问题来自深层嵌套的数据结构:
+
+![](https://ws1.sinaimg.cn/large/006tNc79ly1fkiye8kxdbj31hc0u0myv.jpg)
+
+在深层嵌套的结构中,组件状态从父组件传递途径中间组件最后猜到目标组件.
+
+### Summary
+
+Redux 在以下几个方面改善可预测性:
+
+- 集中数据到一个地方: store
+- 组件获取数据必须发送请求
+- 数据单向的流动
+- 严格限制状态的改变
+
+Redux 也采用了 React 的思想, 采用 `单向数据流`.
