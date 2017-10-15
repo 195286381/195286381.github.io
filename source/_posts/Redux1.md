@@ -1,8 +1,8 @@
 ---
 layout: folder
 title: React&Redux(1) Why Redux?
-date: 2017-10-15 10:50:30
-tags: redux
+date: 2017-8-16 10:50:30
+tags: Redux
 ---
 # why Redux ?
 
@@ -92,9 +92,13 @@ Redux 在以下几个方面改善可预测性:
 
 Redux 也采用了 React 的思想, 采用 `单向数据流`.
  
-// todo (待补充....)
-## Redux Stores VS Component State
+---
 
+# todo (待补充....)
+## Redux Stores VS Component State
+ Redux 状态 VS 组件状态
 ## Pure Functions
+纯函数
 
 ## Array's.reduce() Method
+reduce方法在redux中的应用
