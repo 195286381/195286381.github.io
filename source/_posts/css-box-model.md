@@ -4,6 +4,7 @@ date: 2017-10-14 12:11:25
 tags: CSS
 ---
 ## CSS盒模型
+
 之前的工作一直都在学习新的东西,疏于整理知识点,现在把CSS盒模型系统的整理一下:
 
 大致有如下几点:
@@ -16,9 +17,11 @@ tags: CSS
 - BFC (边距重叠解决方案)
 
 ### 基本概念
+
 **盒模型**组成: margin + border + padding + content
 
 ### 标准模型和IE模型的区别
+
 标准模型的 width/height 等于 content 的 width/height
 IE模型的 width/height 等于 content+padding+border 的 width/height
 
@@ -55,4 +58,5 @@ IE模型的 width/height 等于 content+padding+border 的 width/height
     + position 不为 static/relative
     + display 为 inline-tabel/tabel相关 
 - BFC 的使用场景
-(关于BFC 后续会写一篇介绍)
+
+(关于BFC 后续会写一篇介绍) // TODO
