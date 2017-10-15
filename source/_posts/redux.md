@@ -91,3 +91,10 @@ Redux 在以下几个方面改善可预测性:
 - 严格限制状态的改变
 
 Redux 也采用了 React 的思想, 采用 `单向数据流`.
+ 
+// todo (待补充....)
+## Redux Stores VS Component State
+
+## Pure Functions
+
+## Array's.reduce() Method
