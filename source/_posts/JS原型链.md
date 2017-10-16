@@ -34,6 +34,6 @@ var o4 = Object.create(p);
 ```
 
 ### 原型, 构造函数, 实例, 原型链
-关系如下图:
+关系如下图:
 
 ![原型, 构造函数, 实例](https://ws4.sinaimg.cn/large/006tKfTcly1fkimbsoz73j30ge0e83z8.jpg)

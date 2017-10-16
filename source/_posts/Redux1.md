@@ -8,7 +8,7 @@ tags: Redux
 
 ## What's Redux/ Why does it exisit?
 
-### Redux is All About State Management
+### Redux is All About State Management
 每当我们学习一个新的工具时,我们要理解为什么我们需要 Redux ? 下面我们将要给出答案.
 
 **Redux is All About State Management** - Redux 就是关于状态管理的
@@ -20,7 +20,7 @@ Redux 的官方文档对其是这样描述的:
 那么你可能会好奇: 为什么 React 已经管理了前端状态, 那么为什么我们还需要 Redux ?
 
 使用 Redux 的好处体现在当你在处理如两个组件共享同一个状态时, 这中两个组件都需要访问同一个状态时的场景, 我们叫做 **状态共享** ,
-你可以通过状态提升如提升状态到最近的父组件来实现状态共享, 但是,如果更多的组件需要共享同一个状态, 你需要一层一层的把状态提升到父组件, 这种操作是相当乏味的. 并且, 在状态提升的过程中, 有很多中间组件并不需要或者这个状态.
+你可以通过状态提升如提升状态到最近的父组件来实现状态共享, 但是,如果更多的组件需要共享同一个状态, 你需要一层一层的把状态提升到父组件, 这种操作是相当乏味的. 并且, 在状态提升的过程中, 有很多中间组件并不需要或者这个状态.
 
 当构建Web应用时, Redux 不仅提供了一个组织数据存储的方式,也提供了在应用内快速访问数据的方式. 告诉 Redux 那个组件需要那个数据, Redux 将负责剩下的工作.
 
@@ -31,11 +31,11 @@ Redux 的官方文档对其是这样描述的:
 Redux 的一个根本原则就是单一数据源: The store, 
 store 对象 包含了应用的所有全局状态, 全部被维护在一个对象树上.
 
-只有一个单独的状态树能获益很多方面, 集中式的定位,调试和审查代码也都将变得更加直接.
+只有一个单独的状态树能获益很多方面, 集中式的定位,调试和审查代码也都将变得更加直接.
 
 为了保证单一数据源, Redux 也实现了一些规则来作为保证, 其中一点: 状态在 Redux 中是 `read-only`, 也就是说, Redux的状态是不可变的, 我们不能直接修改 Redux 的状态, 而是声明一种去改变状态的意图.
 
-最终证明发现, 只有叫做 reducers 的纯函数有能力改变 状态.
+最终证明发现, 只有叫做 reducers 的纯函数有能力改变 状态.
 
 总结来说, Redux 的**三大原则** :
 - 单一数据源
@@ -54,7 +54,7 @@ store 对象 包含了应用的所有全局状态, 全部被维护在一个对�
 - 导航控制
 
 ### summary
-Redux 是一个用于前端状态管理的 Javascript 库, 他与 React 应用无关, 随着应用程序的复杂, 来自状态方便的 bug 越来越多, 使用 Redux 管理一个单一状态树, 使得状态更加 `predictability`, 这也是为什么开发者喜欢 Redux 的原因.
+Redux 是一个用于前端状态管理的 Javascript 库, 他与 React 应用无关, 随着应用程序的复杂, 来自状态方便的 bug 越来越多, 使用 Redux 管理一个单一状态树, 使得状态更加 `predictability`, 这也是为什么开发者喜欢 Redux 的原因.
 
 ## How Redux Improves Predictability?
 
@@ -75,7 +75,7 @@ Unidirectional Data Flow Review
 ![](https://ws3.sinaimg.cn/large/006tNc79ly1fkiy4v4deqj31kw0w0dp6.jpg)
 `Data flows down from parent component to child component. Data updates are sent to the parent component where the parent performs the actual change.`
 
-React 的单向数据流工作的很好, 但是问题来自深层嵌套的数据结构:
+React 的单向数据流工作的很好, 但是问题来自深层嵌套的数据结构:
 
 ![](https://ws1.sinaimg.cn/large/006tNc79ly1fkiye8kxdbj31hc0u0myv.jpg)
 
@@ -90,7 +90,7 @@ Redux 在以下几个方面改善可预测性:
 - 数据单向的流动
 - 严格限制状态的改变
 
-Redux 也采用了 React 的思想, 采用 `单向数据流`.
+Redux 也采用了 React 的思想, 采用 `单向数据流`.
  
 ---
 
