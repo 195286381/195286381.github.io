@@ -121,4 +121,5 @@ tags:
     proto.constructor = Child5;
     Child5.prototype = proto;
 
+
 ```
