@@ -79,8 +79,6 @@ tags:
      var s4 = new Child3();
      s3.play.push(4);
      console.log(s3.play, s4.play); // output: [1, 2, 3] [1, 2, 3, 4]
-     
-     // 缺点: 
 
     /**
      * 组合继承的优化1
@@ -101,7 +99,10 @@ tags:
     var s6 = new Child4();
     // 缺点:
 
-    ***最终版***
+  
+    //////////
+    //最终版//
+    /////////
 
     /**
      * 组合继承的优化2
@@ -120,6 +121,5 @@ tags:
     var proto = Object.create(Parent5.prototype);
     proto.constructor = Child5;
     Child5.prototype = proto;
-
 
 ```
