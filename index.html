@@ -1,0 +1,1853 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Xzzzzz">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Xzzzzz">
+<meta property="og:locale" content="zh-Hans">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Xzzzzz">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+
+
+
+
+  <title>Xzzzzz</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xzzzzz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/17/渲染机制/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/17/渲染机制/" itemprop="url">前端渲染机制</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-17T21:25:32+00:00">
+                2017-10-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="渲染机制类"><a href="#渲染机制类" class="headerlink" title="渲染机制类"></a>渲染机制类</h2><h3 id="什么是DOCTYPE及作用"><a href="#什么是DOCTYPE及作用" class="headerlink" title="什么是DOCTYPE及作用"></a>什么是DOCTYPE及作用</h3><p>DTD (document type definition, 文档类型定义)是一系列的语法规则, 用来定义 XML 或者 XHTML 的文件类型, 浏览器会使用它来判断文档类型, 决定使用何种协议来解析, 以及切换浏览器模式</p>
+<p>DOCTYPE 是用来声明文档类型和 DTD规范的, 一个主要的用途就是文件的合法性校验, 如果文件代码不合法, 那么浏览器解析时会出一些差错.</p>
+<p>HTML5<br>&lt;!DOCTYOE html&gt;</p>
+<p>HTML 4.01 Strict<br>    该DTD包含所有HTML元素和属性, 单不包含展示性的和弃用的元素.</p>
+<p>HTML 4.01 Transitional<br>    该DTD包含所有HTML元素和属性, 包括展示性的和弃用的元素.</p>
+<h3 id="浏览器渲染过程"><a href="#浏览器渲染过程" class="headerlink" title="浏览器渲染过程"></a>浏览器渲染过程</h3><p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fklkqunq0kj30hc081q3d.jpg" alt="浏览器渲染过程"></p>
+<h3 id="重排-Reflow"><a href="#重排-Reflow" class="headerlink" title="重排 Reflow"></a>重排 Reflow</h3><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><p>DOM 结构中的各个元素都有自己的盒子(模型), 这些都需要浏览器根据各种样式来计算并根据计算结果将元素放到它该出现的位置, 这个过程称为 <code>reflow</code>.</p>
+<h4 id="触发-Reflow"><a href="#触发-Reflow" class="headerlink" title="触发 Reflow"></a>触发 Reflow</h4><ul>
+<li>当你增加, 删除, 修改 DOM 结点时, 会导致 Reflow 或 Repaint</li>
+<li>当你移动 DOM 的位置, 或者是搞个动画的时候</li>
+<li>当你修改 CSS 样式的时候</li>
+<li>当你 Resize 窗口的时候, 或者滚动的时候</li>
+<li>当你修改网页的默认字体时</li>
+</ul>
+<h3 id="重绘-Repaint"><a href="#重绘-Repaint" class="headerlink" title="重绘 Repaint"></a>重绘 Repaint</h3><h4 id="定义-1"><a href="#定义-1" class="headerlink" title="定义"></a>定义</h4><p>当各种盒子的位置 大小以及其他属性, 例如颜色, 字体大小等都确认下来后, 浏览器于是便把这些元素都按照各自的特性绘制了一遍, 于是页面的内容出现了, 这个过程称之为 <code>repaint</code></p>
+<h4 id="触发-Repaint"><a href="#触发-Repaint" class="headerlink" title="触发 Repaint"></a>触发 Repaint</h4><p>DOM改动<br>CSS改动</p>
+<p><em>减少触发 : 通过createDocumentFragment()</em></p>
+<p>附录: 可参考网页: <a href="http://www.cnblogs.com/aaronjs/archive/2013/06/27/3159789.html" target="_blank" rel="noopener">http://www.cnblogs.com/aaronjs/archive/2013/06/27/3159789.html</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/16/communication/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/16/communication/" itemprop="url">communication</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-16T15:11:43+00:00">
+                2017-10-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/16/JSOOP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/16/JSOOP/" itemprop="url">前端知识梳理-面向对象类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-16T10:55:48+00:00">
+                2017-10-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="面向对象类"><a href="#面向对象类" class="headerlink" title="面向对象类"></a>面向对象类</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 类的声明</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Foo</span>(<span class="params">name</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = name</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * ES6中的class的声明</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Animal2</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>() &#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 借助构造函数实现继承</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'Parent1'</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Parent.ptototype.say() &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Child1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    Parent1.call(<span class="keyword">this</span>); <span class="comment">// (apply可选) 改变this指向</span></span><br><span class="line">    <span class="keyword">this</span>.type = <span class="string">'Child1'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 原理: 改变this指向.</span></span><br><span class="line"><span class="comment">// 缺点: 构造函数实现继承无法继承原型属性</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 借助原型实现继承</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'Parent2'</span>;</span><br><span class="line">    <span class="keyword">this</span>.play = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Child2</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.type = <span class="string">'Child2'</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Child2.prototype = <span class="keyword">new</span> Patent2();</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 组合继承</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">Parent3</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">     <span class="keyword">this</span>.name = <span class="string">'Parent3'</span></span><br><span class="line">     <span class="keyword">this</span>.play = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">Child3</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">     Parent3.call(<span class="keyword">this</span>);</span><br><span class="line">     <span class="keyword">this</span>.type = <span class="string">'Child3'</span></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> Child3.prototype = <span class="keyword">new</span> Parent3();</span><br><span class="line"> <span class="keyword">var</span> s3 = <span class="keyword">new</span> Child3();</span><br><span class="line"> <span class="keyword">var</span> s4 = <span class="keyword">new</span> Child3();</span><br><span class="line"> s3.play.push(<span class="number">4</span>);</span><br><span class="line"> <span class="built_in">console</span>.log(s3.play, s4.play); <span class="comment">// output: [1, 2, 3] [1, 2, 3, 4]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 组合继承的优化1</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent4</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'Parent4'</span>;</span><br><span class="line">    <span class="keyword">this</span>.play = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Child4</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    Parent4.call(<span class="keyword">this</span>);</span><br><span class="line">    <span class="keyword">this</span>.type = <span class="string">'Child4'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">Child4.prototype = Parent4.prototype;</span><br><span class="line"><span class="keyword">var</span> s5 = <span class="keyword">new</span> Child4();</span><br><span class="line"><span class="keyword">var</span> s6 = <span class="keyword">new</span> Child4();</span><br><span class="line"><span class="comment">// 缺点:</span></span><br><span class="line"></span><br><span class="line">  </span><br><span class="line"><span class="comment">//////////</span></span><br><span class="line"><span class="comment">//最终版//</span></span><br><span class="line"><span class="comment">/////////</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 组合继承的优化2</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Parent5</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name = <span class="string">'Parent5'</span>;</span><br><span class="line">    <span class="keyword">this</span>.play = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Child5</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    Parent5.call(<span class="keyword">this</span>);</span><br><span class="line">    <span class="keyword">this</span>.type =<span class="string">'Child5'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> proto = <span class="built_in">Object</span>.create(Parent5.prototype);</span><br><span class="line">proto.constructor = Child5;</span><br><span class="line">Child5.prototype = proto;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/15/front-end-communication/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/15/front-end-communication/" itemprop="url">前端知识梳理-面向对象类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T10:55:48+00:00">
+                2017-10-15
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="通信类"><a href="#通信类" class="headerlink" title="通信类"></a>通信类</h2><h3 id="什么是同源策略以及限制"><a href="#什么是同源策略以及限制" class="headerlink" title="什么是同源策略以及限制"></a>什么是同源策略以及限制</h3><p>同源策略限制从一个源加载的文档或脚本如何与另一个源的资源进行交互. 这是一个用于隔离潜在恶意文件的关键的安全机制</p>
+<ul>
+<li>Cookie, LocalStorage 和 IndexDB 无法读取</li>
+<li>DOM 无法获取</li>
+<li>AJAX 请求不能发送</li>
+</ul>
+<h3 id="如何创建-AJAX"><a href="#如何创建-AJAX" class="headerlink" title="如何创建 AJAX"></a>如何创建 AJAX</h3><ul>
+<li>XMLHttpRequest对象的工作流程</li>
+<li>兼容性问题</li>
+<li>事件的触发条件</li>
+</ul>
+<h3 id="跨域通信的几种方式"><a href="#跨域通信的几种方式" class="headerlink" title="跨域通信的几种方式"></a>跨域通信的几种方式</h3><ul>
+<li>JSONP </li>
+<li>Hash</li>
+<li>postMessage (H5新增)</li>
+<li>WebSocket (不受同源策略限制)</li>
+<li>CORS (可以理解为支持垮与通信的AJAX)</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">util.jsonp  = <span class="function"><span class="keyword">function</span> (<span class="params">url, onsuccess, onerror, charset</span>)</span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/14/css-box-model/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/14/css-box-model/" itemprop="url">前端知识梳理-CSS盒模型</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T12:11:25+00:00">
+                2017-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="CSS盒模型"><a href="#CSS盒模型" class="headerlink" title="CSS盒模型"></a>CSS盒模型</h2><p>之前的工作一直都在学习新的东西,疏于整理知识点,现在把CSS盒模型系统的整理一下:</p>
+<p>大致有如下几点:</p>
+<ul>
+<li>基本概念: 标准模型 + IE模型</li>
+<li>标准模型和IE模型的区别 (计算高度和宽度的不同)</li>
+<li>CSS如何设置这两种模型 (box-sizing)</li>
+<li>JS如何获取盒模型对应的宽和高</li>
+<li>根据盒模型解释边距重叠</li>
+<li>BFC (边距重叠解决方案)</li>
+</ul>
+<h3 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h3><p><strong>盒模型</strong>组成: margin + border + padding + content</p>
+<h3 id="标准模型和IE模型的区别"><a href="#标准模型和IE模型的区别" class="headerlink" title="标准模型和IE模型的区别"></a>标准模型和IE模型的区别</h3><p>标准模型的 width/height 等于 content 的 width/height<br>IE模型的 width/height 等于 content+padding+border 的 width/height</p>
+<h3 id="CSS盒模型设置"><a href="#CSS盒模型设置" class="headerlink" title="CSS盒模型设置"></a>CSS盒模型设置</h3><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">box-sizing: content-box; // 标准模型 (浏览器默认的方法)</span><br><span class="line">box-sizing: border-box; // IE 模型</span><br></pre></td></tr></table></figure>
+<h3 id="JS如何获取盒模型对应的宽和高"><a href="#JS如何获取盒模型对应的宽和高" class="headerlink" title="JS如何获取盒模型对应的宽和高"></a>JS如何获取盒模型对应的宽和高</h3> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">dom.style.width/height // 取出内联样式的宽和高</span><br><span class="line"></span><br><span class="line">dom.currentStyle.width/height // 获取当前的宽度和高度 (only IE)</span><br><span class="line">window.getComputedStyle(dom).width/height // 取出计算后的宽和高 (兼容 Firefox Chrome)</span><br><span class="line"></span><br><span class="line">dom.getBoundingClientRect().width/height  // 获取元素的四个角,计算能够得到.</span><br></pre></td></tr></table></figure>
+<h3 id="BFC-边距重叠解决方案"><a href="#BFC-边距重叠解决方案" class="headerlink" title="BFC (边距重叠解决方案)"></a>BFC (边距重叠解决方案)</h3><ul>
+<li>BFC 的基本概念<ul>
+<li>块级格式化上下文</li>
+</ul>
+</li>
+<li>BFC 的原理 (渲染规则)<ul>
+<li>BFC 这个元素的垂直方向的边距会发生重叠</li>
+<li>BFC 不会和浮动元素的 box 重叠 (清除浮动)</li>
+<li>BFC 在页面上是一个独立的容器</li>
+<li>计算 BFC 高度的时候, 浮动元素也会参与计算</li>
+</ul>
+</li>
+<li>如何创建 BFC <ul>
+<li>overflow 不为 visible</li>
+<li>float 不为 none</li>
+<li>position 不为 static/relative</li>
+<li>display 为 inline-tabel/tabel相关 </li>
+</ul>
+</li>
+<li>BFC 的使用场景</li>
+</ul>
+<p>(关于BFC 后续会写一篇介绍) // TODO</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/02/dom-event/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/02/dom-event/" itemprop="url">前端知识梳理-DOM事件类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-02T15:34:46+00:00">
+                2017-10-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="DOM事件类"><a href="#DOM事件类" class="headerlink" title="DOM事件类"></a>DOM事件类</h2><ul>
+<li>基本概念: DOM 事件的级别</li>
+<li>DOM 事件模型 (捕获/冒泡)</li>
+<li>DOM 事件捕获的具体流程</li>
+<li>Event 对象的常见应用</li>
+<li>自定义事件</li>
+</ul>
+<h3 id="DOM-事件级别"><a href="#DOM-事件级别" class="headerlink" title="DOM 事件级别"></a>DOM 事件级别</h3><ul>
+<li>DOM0<ul>
+<li>element.onclick = function() {}</li>
+</ul>
+</li>
+<li>DOM2<ul>
+<li>element.addEventListener(‘click’, function() {})</li>
+</ul>
+</li>
+<li>DOM3<ul>
+<li>element.addEventListenr(‘keyup’, function() {})</li>
+</ul>
+</li>
+</ul>
+<h3 id="DOM-事件模式"><a href="#DOM-事件模式" class="headerlink" title="DOM 事件模式"></a>DOM 事件模式</h3><ul>
+<li>事件捕获</li>
+<li>事件冒泡</li>
+</ul>
+<h3 id="事件捕获的具体流程"><a href="#事件捕获的具体流程" class="headerlink" title="事件捕获的具体流程"></a>事件捕获的具体流程</h3><p>一个完成的事件流分三个阶段:</p>
+<ol>
+<li>事件捕获阶段 (从最不具体的到具体) (window -&gt; document -&gt; html -&gt; body -&gt; ….)</li>
+<li>处于目标阶段 </li>
+<li>事件冒泡阶段 (从最具体到最不具体)</li>
+</ol>
+<h3 id="Event-对象的常见应用"><a href="#Event-对象的常见应用" class="headerlink" title="Event 对象的常见应用"></a>Event 对象的常见应用</h3><ul>
+<li>阻止默认行为 event.preventDefault()</li>
+<li>阻止冒泡 event.stopPropagation()</li>
+<li>阻止事件的响应优先级 event.stopImmediateProppagation</li>
+<li>event.currentTarget // 事件当前所处于的元素</li>
+<li>event.target // 触发事件的元素</li>
+</ul>
+<h3 id="自定义事件"><a href="#自定义事件" class="headerlink" title="自定义事件"></a>自定义事件</h3><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> eve = <span class="keyword">new</span> Event(<span class="string">'custome'</span>);</span><br><span class="line">ev.addEventListener(<span class="string">'custome'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    con;sole.log(<span class="string">'custome'</span>)</span><br><span class="line">    &#125;);</span><br><span class="line">ev.dispatchEvent(eve);</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/01/http-protocol/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/10/01/http-protocol/" itemprop="url">前端知识梳理-HTTP协议类</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-01T16:49:27+00:00">
+                2017-10-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="HTTP-协议类"><a href="#HTTP-协议类" class="headerlink" title="HTTP 协议类"></a>HTTP 协议类</h2><h3 id="HTTP-协议的主要特点"><a href="#HTTP-协议的主要特点" class="headerlink" title="HTTP 协议的主要特点"></a>HTTP 协议的主要特点</h3><ul>
+<li>简单快速</li>
+<li>灵活</li>
+<li>无连接</li>
+<li>无状态</li>
+</ul>
+<h3 id="HTTP-报文的组成部分"><a href="#HTTP-报文的组成部分" class="headerlink" title="HTTP 报文的组成部分"></a>HTTP 报文的组成部分</h3><ul>
+<li>请求报文<ul>
+<li>请求行</li>
+<li>请求头</li>
+<li>空行</li>
+<li>请求体</li>
+</ul>
+</li>
+<li>响应报文<ul>
+<li>状态行</li>
+<li>响应头</li>
+<li>空行</li>
+<li>响应体</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTTP-方法"><a href="#HTTP-方法" class="headerlink" title="HTTP 方法"></a>HTTP 方法</h3><ul>
+<li>GET -&gt; 获取资源</li>
+<li>POST -&gt; 传输资源</li>
+<li>PUT -&gt; 更新资源</li>
+<li>DELETE -&gt; </li>
+</ul>
+<p>POST 和 GET 的区别</p>
+<ul>
+<li>GET 在浏览器回退时是无害的, 而 POST 会再次提交请求 ✅</li>
+<li>GET 产生的URL地址可以被收藏, 而 POST 不可以 ✅</li>
+<li>GET 请求会被浏览器主动缓存, 而 POST 不会, 除非手动设置 ✅</li>
+<li>GET 只能进行 URL 编码, 而 POST 支持多种编码方式 ✅</li>
+<li>GET 请求参数会被完成保存在浏览器历史记录里面, 而 POST 中的参数不会被保留</li>
+<li>GET 请求在 URL 中传送的参数是有长度限制的, 而 POST 没有限制</li>
+<li>对参数的数据类型, GET只接受 ASCII 字符, 而POST没有限制</li>
+<li>GET 比 POST 更不安全, 因为参数直接暴露在URL上, 所以不能用来传递敏感信息</li>
+<li>GET 参数通过 URL 传递, POST 放在 Request body 中 ✅</li>
+</ul>
+<h3 id="HTTP-状态码"><a href="#HTTP-状态码" class="headerlink" title="HTTP 状态码"></a>HTTP 状态码</h3><p>状态码类</p>
+<ul>
+<li>1xx: 指示信息 - 表示请求已经接收, 继续处理</li>
+<li>2xx: 成功- 表示请求已被成功接收</li>
+<li>3xx: 重定向 - 要完成请求必须进行更进一步的操作</li>
+<li>4xx: 客户端错误 - 请求有语法错误或请求无法实现</li>
+<li>5xx: 服务器错误 - 服务器未能实现合法的请求</li>
+</ul>
+<p>常见 HTTP 状态码:</p>
+<ul>
+<li>200 OK: 客户端请求成功</li>
+<li>206 Partial Content: 客户发送了一个带有 Range 头的 GET 请求, 服务器完成了它</li>
+<li>301 Moved Permanently: 所请求的页面已经转移至新的 URL (重定向)</li>
+<li>302 Found: 所请求的页面已经临时 (临时重定向)</li>
+<li>304 Not Modifued: 客户端有缓存的文档并发出一个条件性请求, 服务器告诉客户端原来缓存的文档可以继续使用.</li>
+<li>400 Bad Request: 客户端请求有语法错误, 不能被服务器理解</li>
+<li>401 Unauthorized: 请求未经授权, 这个状态代码必须和 WWW-Authenticate 报头域一起使用</li>
+<li>403 Forbidden: 对被请求页面的访问被禁止 (一般页面的地址只能通过服务器访问,会报此类错误)</li>
+<li>404 Not Found: 请求资源不存在</li>
+<li>500 Internal Server Error: 服务器发生不可预期的错误原来缓冲的文档还可以继续使用</li>
+</ul>
+<h3 id="持久连接"><a href="#持久连接" class="headerlink" title="持久连接"></a>持久连接</h3><p>版本支持条件: HTTP1.1</p>
+<p>HTTP 协议采用”请求-应答”模式, 当使用普通模式, 即非 Keep-Alive 模式时, 每个请求/应答都要建立一个连接, 完成之后立即断开连接 (HTTP协议为无连接的协议)</p>
+<p>当使用 Keep-Alive 模式 (又称持久连接, 连接重用)时, Keep-Alive 功能使客户端到服务器端的连接持续有效, 当出现对服务器的后续请求时, Keep-Alive功能避免了建立或者重新建立连接.</p>
+<h3 id="管线化"><a href="#管线化" class="headerlink" title="管线化"></a>管线化</h3><p>在使用持久连接的情况下, 某个连接上消息的传递类似于:</p>
+<p>请求1 -&gt; 响应1 -&gt; 请求2 -&gt; 响应2 -&gt; 请求3 -&gt; 响应3</p>
+<p>某个连接上的消息变成了类似这样:</p>
+<p>请求1 -&gt; 请求2 -&gt; 请求3 -&gt; 响应1 -&gt; 响应2 -&gt; 响应3</p>
+<p>管线化:</p>
+<ul>
+<li>管线化机制通过持久连接完成, 仅HTTP/1.1支持此技术</li>
+<li>只有 GET 和 HEAD 请求可以进行管线化, 而 POST 则有所限制</li>
+<li>初次创建连接时不应该启动管线化, 而 POST 则有所限制</li>
+<li>管线化不会影响响应到来的顺序, 如上面的例子, 响应返回的顺序并未改变</li>
+<li>HTTP/1.1 要求服务器支持管线化, 但并不是要求服务器也对响应进行管线化处理, 只是要求对于管线化的请求不失败即可</li>
+<li>由于上面提到的服务端问题, 开启管线化很可能并不会带来大幅度的性能提升, 而且很多服务器端和代理程序对管线化的支持并不好, 因为现代浏览器如 Chrome 和 Firefox 默认并未开启管线化支持.</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/20/前端事件系统的总结整理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/20/前端事件系统的总结整理/" itemprop="url">前端事件系统的总结整理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-20T16:19:39+00:00">
+                2017-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前端事件系统"><a href="#前端事件系统" class="headerlink" title="前端事件系统"></a>前端事件系统</h2><h3 id="事件系统发展"><a href="#事件系统发展" class="headerlink" title="事件系统发展"></a>事件系统发展</h3><p>JavaScript 与 HTML 之间的交互,是通过<strong>事件</strong>实现的. <strong>事件</strong>就是浏览器发生的特定的交互瞬间.</p>
+<p>让我们看看不同时期,前端的事件函数书写：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 80年代的事件定义 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">"alert('80age')&gt;80's&lt;/button&gt;</span></span></span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/20/travisCI/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/20/travisCI/" itemprop="url">traisCI集成</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-20T15:19:39+00:00">
+                2017-09-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="travis-ci-集成"><a href="#travis-ci-集成" class="headerlink" title="travis ci 集成."></a>travis ci 集成.</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/19/JsutDoIT/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/09/19/JsutDoIT/" itemprop="url">Just do IT.</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-19T15:19:39+00:00">
+                2017-09-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Just-Do-IT"><a href="#Just-Do-IT" class="headerlink" title="Just Do IT."></a>Just Do IT.</h3><p>一直懒懒散散不想做什么总结,今天心血来潮把个人博客搭建起来了.那么就纪念一下把!</p>
+<p>So, just code and just have fun!</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <p class="site-author-name" itemprop="name">Xzzzzz</p>
+            <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xzzzzz</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

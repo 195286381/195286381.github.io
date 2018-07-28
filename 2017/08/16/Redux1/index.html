@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Redux," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="why Redux ?What’s Redux/ Why does it exisit?Redux is All About State Management每当我们学习一个新的工具时,我们要理解为什么我们需要 Redux ? 下面我们将要给出答案. Redux is All About State Management - Redux 就是关于状态管理的 Redux 的官方文档对其是这样描述的:">
+<meta name="keywords" content="Redux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="React&amp;Redux(1) Why Redux?">
+<meta property="og:url" content="http://yoursite.com/2017/08/16/Redux1/index.html">
+<meta property="og:site_name" content="Xzzzzz">
+<meta property="og:description" content="why Redux ?What’s Redux/ Why does it exisit?Redux is All About State Management每当我们学习一个新的工具时,我们要理解为什么我们需要 Redux ? 下面我们将要给出答案. Redux is All About State Management - Redux 就是关于状态管理的 Redux 的官方文档对其是这样描述的:">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fkiy4v4deqj31kw0w0dp6.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/006tNc79ly1fkiye8kxdbj31hc0u0myv.jpg">
+<meta property="og:updated_time" content="2018-07-28T03:55:22.110Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="React&amp;Redux(1) Why Redux?">
+<meta name="twitter:description" content="why Redux ?What’s Redux/ Why does it exisit?Redux is All About State Management每当我们学习一个新的工具时,我们要理解为什么我们需要 Redux ? 下面我们将要给出答案. Redux is All About State Management - Redux 就是关于状态管理的 Redux 的官方文档对其是这样描述的:">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/006tNc79ly1fkiy4v4deqj31kw0w0dp6.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2017/08/16/Redux1/"/>
+
+
+
+
+
+  <title>React&Redux(1) Why Redux? | Xzzzzz</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Xzzzzz</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/16/Redux1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Xzzzzz">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Xzzzzz">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">React&Redux(1) Why Redux?</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-16T10:50:30+00:00">
+                2017-08-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="why-Redux"><a href="#why-Redux" class="headerlink" title="why Redux ?"></a>why Redux ?</h1><h2 id="What’s-Redux-Why-does-it-exisit"><a href="#What’s-Redux-Why-does-it-exisit" class="headerlink" title="What’s Redux/ Why does it exisit?"></a>What’s Redux/ Why does it exisit?</h2><h3 id="Redux-is-All-About-State-Management"><a href="#Redux-is-All-About-State-Management" class="headerlink" title="Redux is All About State Management"></a>Redux is All About State Management</h3><p>每当我们学习一个新的工具时,我们要理解为什么我们需要 Redux ? 下面我们将要给出答案.</p>
+<p><strong>Redux is All About State Management</strong> - Redux 就是关于状态管理的</p>
+<p>Redux 的官方文档对其是这样描述的:</p>
+<p><strong><em>a predicatable container for javascript apps</em></strong></p>
+<p>那么你可能会好奇: 为什么 React 已经管理了前端状态, 那么为什么我们还需要 Redux ?</p>
+<p>使用 Redux 的好处体现在当你在处理如两个组件共享同一个状态时, 这中两个组件都需要访问同一个状态时的场景, 我们叫做 <strong>状态共享</strong> ,<br>你可以通过状态提升如提升状态到最近的父组件来实现状态共享, 但是,如果更多的组件需要共享同一个状态, 你需要一层一层的把状态提升到父组件, 这种操作是相当乏味的. 并且, 在状态提升的过程中, 有很多中间组件并不需要或者这个状态.</p>
+<p>当构建Web应用时, Redux 不仅提供了一个组织数据存储的方式,也提供了在应用内快速访问数据的方式. 告诉 Redux 那个组件需要那个数据, Redux 将负责剩下的工作.</p>
+<p>使用 Redux, 你就是在控制 <code>什么时候</code>, <code>为什么</code>, <code>怎么</code> 操作状态.</p>
+<h3 id="The-Store-A-Single-Source-of-Truth"><a href="#The-Store-A-Single-Source-of-Truth" class="headerlink" title="The Store: A Single Source of Truth"></a>The Store: A Single Source of Truth</h3><p>Redux 的一个根本原则就是单一数据源: The store,<br>store 对象 包含了应用的所有全局状态, 全部被维护在一个对象树上.</p>
+<p>只有一个单独的状态树能获益很多方面, 集中式的定位,调试和审查代码也都将变得更加直接.</p>
+<p>为了保证单一数据源, Redux 也实现了一些规则来作为保证, 其中一点: 状态在 Redux 中是 <code>read-only</code>, 也就是说, Redux的状态是不可变的, 我们不能直接修改 Redux 的状态, 而是声明一种去改变状态的意图.</p>
+<p>最终证明发现, 只有叫做 reducers 的纯函数有能力改变 状态.</p>
+<p>总结来说, Redux 的<strong>三大原则</strong> :</p>
+<ul>
+<li>单一数据源</li>
+<li>状态不可变</li>
+<li>状态修改由纯函数完成</li>
+</ul>
+<p>单页应用时使前端开发变得越来越复杂, 选择合适的状态管理工具, 比之前而言越来越重要, 除了管理一些表格状态, 一个应用程序也需要管理其他的状态:</p>
+<ul>
+<li>服务端响应</li>
+<li>缓存数据</li>
+<li>本地数据</li>
+</ul>
+<p>再加之,目前的UI状态也变得越来越复杂,我们还需要追踪:</p>
+<ul>
+<li>激活的路由</li>
+<li>当前选中的tab标签</li>
+<li>导航控制</li>
+</ul>
+<h3 id="summary"><a href="#summary" class="headerlink" title="summary"></a>summary</h3><p>Redux 是一个用于前端状态管理的 Javascript 库, 他与 React 应用无关, 随着应用程序的复杂, 来自状态方便的 bug 越来越多, 使用 Redux 管理一个单一状态树, 使得状态更加 <code>predictability</code>, 这也是为什么开发者喜欢 Redux 的原因.</p>
+<h2 id="How-Redux-Improves-Predictability"><a href="#How-Redux-Improves-Predictability" class="headerlink" title="How Redux Improves Predictability?"></a>How Redux Improves Predictability?</h2><p>既然说到 Redux 提升状态的可预测性, 那么它是在那几个方面提升状态的可预测性呢?</p>
+<h3 id="Predictability"><a href="#Predictability" class="headerlink" title="Predictability"></a>Predictability</h3><p>Redux 提高应用的可预测性在如下几个方面.</p>
+<ul>
+<li>数据集中化到一个地方: <code>store</code></li>
+<li>组件不能直接从 store 写数据</li>
+<li>数据在 store 的流向是单向的</li>
+<li>严格限制 store 的修改</li>
+</ul>
+<p>Unidirectional Data Flow Review</p>
+<p>回顾 React 的核心特性是 <code>单向数据流</code></p>
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79ly1fkiy4v4deqj31kw0w0dp6.jpg" alt=""><br><code>Data flows down from parent component to child component. Data updates are sent to the parent component where the parent performs the actual change.</code></p>
+<p>React 的单向数据流工作的很好, 但是问题来自深层嵌套的数据结构:</p>
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79ly1fkiye8kxdbj31hc0u0myv.jpg" alt=""></p>
+<p>在深层嵌套的结构中,组件状态从父组件传递途径中间组件最后才到目标组件.</p>
+<h3 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h3><p>Redux 在以下几个方面改善可预测性:</p>
+<ul>
+<li>集中数据到一个地方: store</li>
+<li>组件获取数据必须发送请求</li>
+<li>数据单向的流动</li>
+<li>严格限制状态的改变</li>
+</ul>
+<p>Redux 也采用了 React 的思想, 采用 <code>单向数据流</code>.</p>
+<hr>
+<h1 id="todo-待补充…"><a href="#todo-待补充…" class="headerlink" title="todo (待补充….)"></a>todo (待补充….)</h1><h2 id="Redux-Stores-VS-Component-State"><a href="#Redux-Stores-VS-Component-State" class="headerlink" title="Redux Stores VS Component State"></a>Redux Stores VS Component State</h2><p> Redux 状态 VS 组件状态</p>
+<h2 id="Pure-Functions"><a href="#Pure-Functions" class="headerlink" title="Pure Functions"></a>Pure Functions</h2><p>纯函数</p>
+<h2 id="Array’s-reduce-Method"><a href="#Array’s-reduce-Method" class="headerlink" title="Array’s.reduce() Method"></a>Array’s.reduce() Method</h2><p>reduce方法在redux中的应用</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Redux/" rel="tag"># Redux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/02/前端页面性能/" rel="next" title="前端页面性能">
+                <i class="fa fa-chevron-left"></i> 前端页面性能
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/09/10/Redux2/" rel="prev" title="React&Redux(2) Redux at it's core">
+                React&Redux(2) Redux at it's core <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          
+            <p class="site-author-name" itemprop="name">Xzzzzz</p>
+            <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+            
+              <a href="/archives/">
+            
+                <span class="site-state-item-count">16</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#why-Redux"><span class="nav-number">1.</span> <span class="nav-text">why Redux ?</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#What’s-Redux-Why-does-it-exisit"><span class="nav-number">1.1.</span> <span class="nav-text">What’s Redux/ Why does it exisit?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Redux-is-All-About-State-Management"><span class="nav-number">1.1.1.</span> <span class="nav-text">Redux is All About State Management</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-Store-A-Single-Source-of-Truth"><span class="nav-number">1.1.2.</span> <span class="nav-text">The Store: A Single Source of Truth</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#summary"><span class="nav-number">1.1.3.</span> <span class="nav-text">summary</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#How-Redux-Improves-Predictability"><span class="nav-number">1.2.</span> <span class="nav-text">How Redux Improves Predictability?</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Predictability"><span class="nav-number">1.2.1.</span> <span class="nav-text">Predictability</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Summary"><span class="nav-number">1.2.2.</span> <span class="nav-text">Summary</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#todo-待补充…"><span class="nav-number">2.</span> <span class="nav-text">todo (待补充….)</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Redux-Stores-VS-Component-State"><span class="nav-number">2.1.</span> <span class="nav-text">Redux Stores VS Component State</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Pure-Functions"><span class="nav-number">2.2.</span> <span class="nav-text">Pure Functions</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array’s-reduce-Method"><span class="nav-number">2.3.</span> <span class="nav-text">Array’s.reduce() Method</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xzzzzz</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+  <span class="post-meta-divider">|</span>
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.2</div>
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
